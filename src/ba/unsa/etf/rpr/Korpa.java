@@ -3,6 +3,7 @@ package ba.unsa.etf.rpr;
 public class Korpa {
     private Artikl[] artikliUKorpi = new Artikl[50];
 
+
     public int getBrojArtikalaUKorpi() {
         return brojArtikalaUKorpi;
     }
@@ -11,7 +12,7 @@ public class Korpa {
         this.brojArtikalaUKorpi = brojArtikalaUKorpi;
     }
 
-    private int brojArtikalaUKorpi;
+    private int brojArtikalaUKorpi=0;
 
     public Artikl[] getArtikliUKorpi() {
         return artikliUKorpi;
@@ -55,7 +56,6 @@ public class Korpa {
         int cijena = 0;
         for(Artikl a : artikliUKorpi)
             cijena += a.getCijena();
-
         return cijena;
     }
 }
